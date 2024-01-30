@@ -1,5 +1,9 @@
 # DGL 113 2024WI Assignment #4
 
+Preview the docs/index.html file with a web browser to get a
+general idea about the webpage layout and its functionality,
+then complete the following tasks.
+
 Create a new file in the `docs` folder called `app.js`.
 
 At the top of the `docs/app.js` file, add the `use strict` directive:
@@ -22,10 +26,20 @@ Create the following functions:
   Short, Tall, Grande, and Venti coffees cost 2.99, 3.19, 3.49 and 3.99 respectively.
   Short, Tall, Grande, and Venti teas cost 2.85, 3.05, 3.25, and 3.50 respectively.
 
-You should maintain all informaiton about the order using several arrays.
-The `getOrderTotal()` function should be implemented by iterating over
-those arrays.
+You should maintain all informaiton about the order using several
+parallel arrays, i.e., the item at the same index position of
+different arrays represents a property of the same order such as
+quantity, size, and description. The `getOrderTotal()` function
+should be implemented by iterating over those arrays.
 
-You may have to create some global variables and/or constants to solve this problem.
+You may have to create some global variables and/or constants
+to solve this problem.
 
-NOTE: Only modify the `docs/app.js` and `docs/index.html` files. Do not make changes to any other files.
+HINT: the parameter values passed into `addItem()` function are
+directly extracted from the webpage dropdown boxes without
+processing. You may need to extract the information you need
+before pushing them on to their respective arrays, or do that
+in the `getOrderTotal()` function.
+
+NOTE: Only modify the `docs/app.js` and `docs/index.html` files.
+Do not make changes to any other files.
